@@ -1,0 +1,74 @@
+.doc {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 0.55rem;
+    background: rgba(12, 18, 17, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28);
+    padding: 0.55rem;
+    border-radius: 0.85rem;
+    backdrop-filter: blur(10px);
+}
+
+
+.spotify {
+    background-color: #2f9b62;
+}
+
+.github {
+    background-color: #242a2a;
+}
+
+
+.cli {
+    background-color: #242a2a;
+}
+
+
+.note {
+    background-color: #d48a3b;
+}
+
+
+.pdf {
+    background-color: #d24e59;
+}
+
+
+.calender {
+    background-color: #5579c9;
+}
+
+
+.link {
+    background-color: #bd5570;
+}
+
+.mail {
+    background-color: #65706e;
+}
+
+
+.icon {
+    padding: 0.55rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 3.7rem;
+    transition: transform 0.18s ease, filter 0.18s ease;
+    cursor: pointer;
+}
+
+.icon:hover {
+    filter: brightness(1.12);
+    transform: translateY(-0.35rem) scale(1.08);
+    z-index: 10;
+}
+

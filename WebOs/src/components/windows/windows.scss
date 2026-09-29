@@ -1,0 +1,119 @@
+.windows {
+    // height: 600px;
+    background-color: #060606;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    // height: 100%;
+    color: rgb(168, 168, 168);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    
+   overflow: auto;
+    scrollbar-width: none; 
+
+    height: 83vh;
+    width: 55vw;
+    .nav {
+
+        padding-inline: 0.75rem;
+        padding-block: 0.5rem;
+        border-bottom: 1px solid rgba(245, 245, 245, 0.24);
+
+        display: flex;
+        align-items: center;
+
+        gap: 1.5rem;
+
+        .dots {
+            display: flex;
+            gap: 0.25rem;
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                background-color: white;
+                border: 0;
+                border-radius: 50%;
+                cursor: pointer;
+                padding: 0;
+                position: relative;
+
+                &:hover::after,
+                &:focus-visible::after {
+                    content: '';
+                    position: absolute;
+                    inset: 3px;
+                    border: 1px solid rgba(0, 0, 0, 0.55);
+                    border-radius: 2px;
+                }
+
+                &::before {
+                    opacity: 0;
+                    transition: opacity 120ms ease;
+                }
+
+                &:hover::before,
+                &:focus-visible::before {
+                    color: rgba(0, 0, 0, 0.7);
+                    display: block;
+                    font-size: 10px;
+                    font-weight: 800;
+                    line-height: 15px;
+                    opacity: 1;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            .red {
+                background-color: #eb3535;
+
+                &::before {
+                    content: 'x';
+                }
+            }
+
+            .yellow {
+                background-color: rgb(247, 247, 81);
+
+                &::before {
+                    content: '-';
+                }
+            }
+
+            .green {
+                background-color: rgb(27, 228, 0);
+
+                &::before {
+                    content: '+';
+                }
+            }
+        }
+
+
+
+    }
+
+    .main-content {
+        height: 100%;
+    }
+
+    .main-content{
+        height: 100%;
+    }
+
+    .main.minimized {
+        display: none;
+    }
+
+    &.maximized {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    *::-webkit-scrollbar{
+        width: 8px;
+    }
+
+}
