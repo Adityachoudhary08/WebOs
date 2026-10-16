@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import "./app.scss"
-import Doc from './components/doc'
+import Doc from './components/Doc'
 import Nav from './components/Nav'
-import GitHub from './components/windows/github'
+import GitHub from './components/windows/GitHub'
 import Note from './components/windows/Notes'
 import Resume from './components/windows/Resume'
 import Spotify from './components/windows/Spotify'
@@ -30,4 +30,3 @@ const App = () => {
 }
 
 export default App
-
